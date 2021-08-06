@@ -1,0 +1,31 @@
+.categorias{
+    background-color: #1fbd3e;
+    border: none;
+    color: white;
+    border-radius: 15px 5px;
+    font-size: 2em;
+    margin: .5%;
+    transition: .3s;
+}
+
+.categorias:hover{
+    background-color: #1078dcb3;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.actived_categorias{
+    background-color: #1078dcb3;
+    border: none;
+    color: white;
+    border-radius: 15px;
+    font-size: 2em;
+    margin: .5%;
+    transition: .3s;
+}
+
+.actived_categorias:hover{
+    background-color: red;
+    cursor: pointer;
+    transition: .3s;
+}

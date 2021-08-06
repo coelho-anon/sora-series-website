@@ -1,0 +1,56 @@
+
+#caixa_search{
+    background-color: #1b9cd4;
+    width: 50%;
+    height: 400px;
+    overflow: auto;
+    margin-left: 22%;
+    overflow: auto;
+}
+
+.elementosDoSearch{
+	margin: 0px;
+    padding: 5%;
+    color: white;
+    font-size: 1.4em;
+    transition: .2s;
+}
+
+.elementosDoSearch:hover{
+    cursor: pointer;
+    background-color: #292733b3;
+    transition: .2s;
+}
+
+#snackbar {
+    visibility: hidden;
+    min-width: 250px;
+    margin-left: -125px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    border-radius: 2px;
+    padding: 16px;
+    position: fixed;
+    z-index: 1;
+    left: 30%;
+    bottom: 30px;
+    font-size: 1.5em;
+}
+
+#snackbar.show {
+    visibility: visible;
+    -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+      @keyframes fadein {
+        from {bottom: 0; opacity: 0;}
+        to {bottom: 30px; opacity: 1;}
+      }
+
+
+      @keyframes fadeout {
+        from {bottom: 30px; opacity: 1;}
+        to {bottom: 0; opacity: 0;}
+      }

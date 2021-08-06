@@ -1,0 +1,336 @@
+       /* width */
+        ::-webkit-scrollbar {
+          width: 9px;
+          scroll-behavior: smooth;
+        }
+
+        /* Track */
+        ::-webkit-scrollbar-track {
+          background-color: grey;
+        }
+
+        /* Handle */
+        ::-webkit-scrollbar-thumb {
+          background: #272222;
+          border-radius: 30px;
+          transition: .2s;
+        }
+
+        /* Handle on hover */
+        ::-webkit-scrollbar-thumb:hover {
+          background: #01ffff;
+          transition: .2s;
+        }
+
+
+body{
+  font-family: Verdana, sans-serif;
+  margin:0;
+  padding: 0px;
+  /*background-color: #2d2d2d;*/
+  background-color: purple;
+}
+
+
+img{
+  vertical-align: middle;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  background-color: grey;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 10%;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+#dot-div{
+  position: absolute;
+  top: 80%;
+  left: 47.5%;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #0cf1b7;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ul{
+      list-style-type: none;
+      background-color: black;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      top: 0;
+      z-index: 9999;
+      width: 100%;
+
+  }
+
+  .divisoria-menu{
+     background-color: #0aad31;
+     border:none;
+     height: 20px;
+  }
+
+  #btn-categorias_link{
+    float: left;
+    text-decoration: none;
+    color: white;
+    padding: 1%;
+    font-size: 1.2em;
+    transition: .2s;
+    border: none;
+    background-color: transparent;
+    font-family: Verdana, sans-serif;
+  }
+
+  #btn-categorias_link:hover{
+    color: #2f9670;
+    transition: .2s;
+    cursor: pointer;
+  }
+
+  li a{
+     float: left;
+     text-decoration: none;
+     color: white;
+     padding: 1%;
+     font-size: 1.2em;
+     transition: .2s;
+  }
+
+  li a:hover{
+    color: #2f9670;
+    transition: .2s;
+  }
+
+  #group-categ{
+    margin-top: 5%;
+    background-color: #2d2d2d;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    display: none;
+  }
+
+  #entrada{
+    background-color: #821ece80;
+    color: white;
+    width: 50%;
+    margin-left: 1%;
+    border-radius: 5px;
+    font-size: 1.5em;
+    margin-top: .8%;
+    border: none;
+  }
+
+  #entrada::placeholder{
+    color: white;
+  }
+
+  #procurar{
+    width: 50px;
+  }
+
+  #search-div{
+    float: left;
+    text-align: center;
+    width: 100%;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+  .postagens_home{
+      font-size: 3em;
+      color: white;
+      border-bottom: 10px solid #8ae214;
+      margin-left: 5%;
+      width: 85%;
+      margin-top: 5%;
+      background-image: linear-gradient(to right, red, purple, blue);
+      box-shadow: -11px 15px 20px 2px #0ddc13;
+      padding: 4px;
+      padding-left: 5px;
+      border-radius: 10px;
+  }
+
+  #cards-results{
+    margin-top: 2%;
+    display: block;
+    margin-left: 3%;
+    right: auto;
+  }
+
+  .galeria-cards{
+    width: 350px;
+    height: 350px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-size: 100% 100%;
+    display: inline-block;
+    margin: 2%;
+    border-radius: 5px;
+    box-shadow: 19px 20px 11px 5px black;
+    transition: .2s;
+    overflow: hidden;
+    word-break: keep-all;
+    text-overflow: ellipsis;
+    color: white;
+    text-align: center;
+  }
+
+  .galeria-cards:hover{
+    cursor: pointer;
+    transition: .2s;
+    box-shadow: 9px 12px 11px 5px #0cff22d9;;
+  }
+
+  #div-galeria-cards, #div-galeria-cards-movies{
+    margin-top: 2%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+
+
+
+
+  .nomeFilme{
+    color: white;
+    width: 100%;
+    font-size: 2em;
+    display: inline-block;
+    margin-top: 78%;
+    overflow: hidden;
+    word-break: keep-all;
+    text-overflow: ellipsis;
+    background-color: black;
+    opacity: .8;
+    padding-bottom: 200%;
+  }
+
+  .filme_galeria-cards{
+    width: 350px;
+    height: 350px;
+    background: url(../images/07.jpg) ;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-size: 100% 100%;
+    display: inline-block;
+    border-radius: 5px;
+    box-shadow: 19px 20px 11px 5px black;
+    transition: .2s;
+  }
+
+  .filme_galeria-cards:hover{
+    cursor: pointer;
+    transition: .2s;
+    box-shadow: 19px 20px 11px 5px #0cff22d9;
+  }

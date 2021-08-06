@@ -1,0 +1,183 @@
+<!-- 
+
+  created by CoelhoAnon
+ -->
+
+
+
+
+<meta charset="utf-8">
+<!DOCTYPE html>
+<html>
+<head>
+
+
+	<title> SORA - SERIES </title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+
+<link rel="stylesheet" type="text/css" href="css/watch style.css">
+<link rel="stylesheet" type="text/css" href="css/category_buttons.css">
+
+</head>
+<body>
+
+<ul id="ul-list" class="EverythingLess">
+  <li> 
+    <a href="index.html">HOME</a>
+  </li>
+
+  <li>
+    <a>
+      <button class="divisoria-menu"></button>
+    </a>
+  </li>
+
+  <li>
+    <a href="filmes.html">MOVIES</a>
+  </li>
+
+  <li>
+    <a>
+      <button class="divisoria-menu"></button>
+    </a>
+  </li>
+
+  <li>
+    <a href="filmes.html">SERIES</a>
+  </li>
+
+  <li>
+    <a>
+      <button class="divisoria-menu"></button>
+    </a>
+  </li>
+</ul>
+
+
+
+<content>
+
+	<button id="hideShow">Hide/Show Everything</button>
+
+  <!-- movie video -->
+	<video style="display: block; margin-left: auto; margin-right: auto;" controls id="movie">
+    <!-- movie source -->
+	  <source type="video/mp4" id="movie_src">
+	  Your browser does not support HTML5 video.
+	</video>
+
+	<button class="EverythingLess" id="btn_download">Download Movie</button>
+	<button id="btn_info" class="EverythingLess">Informations about movie</button>
+
+  <!-- all informations about current movie -->
+	<div id="informations_movie" class="EverythingLess">
+
+
+		<h1 class="informations">Name:<h2 class="info_text">Lorem ipsum</h2></h1>
+
+		<h1 class="informations">Sinopse:<h2 class="info_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</h2></h1>
+
+		<h1 class="informations">Faixa Etaria:<h2 class="info_text">Lorem ipsum</h2></h1>
+
+		<h1 class="informations">Time:<h2 class="info_text">Lorem ipsum</h2></h1>
+
+    <h1 class="informations">Categorias:<span id="info_category"></span></h1>
+
+
+	</div>
+
+
+</content>
+
+	<div class="postagens_home">
+    Recomends
+  </div>
+
+  <div id="div-galeria-cards">
+
+  </div>
+
+<footer>
+
+    <div id="group-categ">
+
+    </div>
+
+</footer>
+
+<script src="JS/filmes.js"></script>
+
+<!-- hide/show button and informations button -->
+<script type="text/javascript">
+
+//informations button.
+//onclick toggle, hide and show informations about current movie.
+$("#btn_info").click(function() {
+  $("#informations_movie").toggle(900, function(){
+  	if (document.getElementById('btn_info').style.marginLeft != '7.2%') {
+
+  		document.getElementById('btn_info').style.marginLeft = '7.2%';
+      $('.postagens_home').css("margin-top", '1%')
+
+  	}
+
+  	else {
+
+  		document.getElementById('btn_info').style.marginLeft = '1%';
+      $('.postagens_home').css("margin-top", '5%')
+
+  	}
+  	
+  });
+});
+
+  //hide/show button hide and show everything, except for
+  //movie video and this button.
+  $("#hideShow").click(function() {
+  $(".EverythingLess").toggle(900);
+  $(".postagens_home").toggle(900);
+  $("#group-categ").toggle(900);
+  $("#div-galeria-cards").toggle(900);
+
+  var myElement = $(this);
+  myElement.css('opacity','.1')
+
+  //hover effect on button (mouse enter)
+  $("#hideShow").mouseenter(function(){
+    var myElement = $(this);
+    myElement.css('opacity','1')
+  });
+
+  //hover effect on button (mouse leave)
+  $("#hideShow").mouseleave(function(){
+
+    if (document.getElementById('group-categ').style.display == '') {
+    	var myElement = $(this);
+    	myElement.css('opacity','.5')
+    }
+
+    else {
+    	var myElement = $(this);
+    	myElement.css('opacity','.1')
+    }
+
+  });
+
+});
+
+
+</script>
+
+<script src="JS/filmes.js"></script>
+<script src="JS/watch cards.js"></script>
+<script src="JS/watch categories.js"></script>
+<script src="JS/watch_linker.js"></script>
+
+</body>
+</html>

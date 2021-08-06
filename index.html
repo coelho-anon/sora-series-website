@@ -1,0 +1,140 @@
+<!-- 
+created by CoelhoAnon
+coelhoanon@gmail.com
+
+date xx/xx/xx     xx:xx
+     day/month/year hour:minutes
+
+
+
+ -->
+
+<!DOCTYPE html>
+<meta charset="utf-8">
+<html>
+<head>
+
+  <title> SORA - SERIES</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+
+<link rel="stylesheet" type="text/css" href="css/index.css">
+<link rel="stylesheet" type="text/css" href="css/search.css">
+<link rel="stylesheet" type="text/css" href="css/category_buttons.css">
+
+</head>
+<body>
+
+<header>
+  <span id="logo">SORA SERIES</span>
+</header>
+
+
+
+
+
+
+
+<ul id="ul-list">
+  <li> 
+    <a style="color: #17b565; cursor: default;">HOME</a>
+  </li>
+
+  <li>
+    <a>
+      <button class="divisoria-menu"></button>
+    </a>
+  </li>
+
+  <li>
+    <a href="filmes.html">MOVIES</a>
+  </li>
+
+  <li>
+    <a>
+      <button class="divisoria-menu"></button>
+    </a>
+  </li>
+
+  <li id="categorias_link">
+    <button id="btn-categorias_link">CATEGORIES</button>
+  </li>
+
+  <li>
+    <a>
+      <button class="divisoria-menu"></button>
+    </a>
+  </li>
+
+  <li>
+    <a href="#">SERIES</a>
+  </li>
+
+  <li>
+    <a>
+      <button class="divisoria-menu"></button>
+    </a>
+  </li>
+
+  <!-- search input -->
+  <div id="search-div">
+
+    <input type="text" name="" id="entrada" placeholder="PROCURAR...">
+    <img src="images/search-icon.png" id="procurar">
+
+  </div>
+
+</ul>
+
+    <div id="actived-group-categ">
+
+    </div>
+
+
+    <div id="group-categ">
+
+    </div>
+
+
+<content id="conteudo">
+
+  <div class="postagens_home" style="display: none;" id="results-of-search">
+    SEARCH RESULTS
+  </div>
+
+  <div id="cards-results">
+
+  </div>
+
+  <div class="postagens_home">
+    LATEST
+  </div>
+
+  <div id="div-galeria-cards">
+
+  </div>
+
+  <div class="postagens_home" id="filme_postagens_home">
+    FIRST MOVIES
+  </div>
+
+  <div id="div-galeria-cards-movies">
+
+  </div>
+
+</content>
+
+<!-- message when movie not founded on search -->
+<div id="snackbar"><span style="color: red">NOT FOUNDED: </span> check if writed corretly </div>
+
+<script src="JS/filmes.js"></script>
+<script src="JS/index.js"></script>
+<script src="JS/search.js"></script>
+<script src="JS/category_button.js"></script>
+<script src="JS/all movies cards founded.js"></script>
+<script src="JS/inicial cards.js"></script>
+
+</body>
+</html> 
